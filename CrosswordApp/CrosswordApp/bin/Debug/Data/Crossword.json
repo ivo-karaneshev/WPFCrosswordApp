@@ -1,0 +1,86 @@
+﻿{
+  "title": "Random",
+  "description": "Normal crossword",
+  "width": 13,
+  "height": 7,
+  "words": [
+    {
+      "position": "0,0",
+      "direction": "across",
+      "clue": "Fate, destiny.",
+      "answer": "kismet"
+    },
+    {
+      "position": "1,0",
+      "direction": "down",
+      "clue": "Sudden urge or inclination.",
+      "answer": "impulse"
+    },
+    {
+      "position": "3,0",
+      "direction": "down",
+      "clue": "A grinding tooth.",
+      "answer": "molar"
+    },
+    {
+      "position": "5,0",
+      "direction": "down",
+      "clue": "Shiver.",
+      "answer": "tremble"
+    },
+    {
+      "position": "0,4",
+      "direction": "across",
+      "clue": "Stain, insult.",
+      "answer": "slur"
+    },
+    {
+      "position": "1,2",
+      "direction": "across",
+      "clue": "Noisy, disruptive ghost.",
+      "answer": "poltergeist"
+    },
+    {
+      "position": "7,0",
+      "direction": "across",
+      "clue": "Resolve, e.g. an argument.",
+      "answer": "settle"
+    },
+    {
+      "position": "7,0",
+      "direction": "down",
+      "clue": "It could be from cane or beef.",
+      "answer": "sugar"
+    },
+    {
+      "position": "9,0",
+      "direction": "down",
+      "clue": "Popular name for a tornado.",
+      "answer": "twister"
+    },
+    {
+      "position": "11,0",
+      "direction": "down",
+      "clue": "Language of ancient Rome.",
+      "answer": "latin"
+    },
+    {
+      "position": "5,4",
+      "direction": "across",
+      "clue": "Deep-toned male voice.",
+      "answer": "baritone"
+    },
+    {
+      "position": "0,6",
+      "direction": "across",
+      "clue": "Insect and name applied to a certain small car.",
+      "answer": "beetle"
+    },
+    {
+      "position": "7,6",
+      "direction": "across",
+      "clue": "Sudden, rude.",
+      "answer": "abrupt"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+﻿<Window x:Class="CrosswordApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrosswordApp"
+        xmlns:dataGrid2D="http://gu.se/DataGrid2D"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Width="1050"
+        Height="600"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="700"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black"
+                BorderThickness="1"
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="25"
+                Height="350"
+                Width="650">
+            <Grid Name="CrosswordGrid"
+                  ShowGridLines="False">
+            </Grid>
+        </Border>
+        <Border BorderBrush="Black"
+                BorderThickness="1,0,0,0"
+                Grid.Row="0"
+                Grid.Column="1"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+            <StackPanel Margin="25"
+                        Height="350">
+                <TextBlock FontWeight="Bold">Across</TextBlock>
+                <ItemsControl ItemsSource="{Binding CluesAcross}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding}"></TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <TextBlock FontWeight="Bold"
+                           Margin="0,10,0,0">Down</TextBlock>
+                <ItemsControl ItemsSource="{Binding CluesDown}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding}"></TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <Grid Margin="0, 10, 0, 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Command="{Binding CheckCrosswordCommand}"
+                            HorizontalAlignment="Stretch"
+                            Grid.Row="0"
+                            Grid.Column="0">Check</Button>
+                    <Button Command="{Binding SolveCrosswordCommand}"
+                            HorizontalAlignment="Stretch"
+                            Grid.Row="0"
+                            Grid.Column="1">Solve</Button>
+                    <Border Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            BorderBrush="Black"
+                            BorderThickness="1">
+                        <TextBlock Text="{Binding Output}"
+                                   TextAlignment="Center"
+                                   FontSize="30"
+                                   Margin="14">
+                        </TextBlock>
+                    </Border>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

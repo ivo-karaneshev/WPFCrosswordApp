@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gu.Wpf.DataGrid2D</name>
+    </assembly>
+    <members>
+        <member name="M:Gu.Wpf.DataGrid2D.TypeExt.Implements(System.Type,System.Type,System.Type)">
+            <summary>
+            To check if type implements IEquatable{string}
+            Call like this type.Implements(typeof(IEquatable{}, typeof(string))
+            </summary>
+        </member>
+        <member name="T:Gu.Wpf.DataGrid2D.RowColumnIndexConverter">
+            <inheritdoc />
+        </member>
+        <member name="M:Gu.Wpf.DataGrid2D.RowColumnIndexConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="M:Gu.Wpf.DataGrid2D.RowColumnIndexConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="M:Gu.Wpf.DataGrid2D.RowColumnIndexConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Gu.Wpf.DataGrid2D.RowColumnIndexConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="E:Gu.Wpf.DataGrid2D.Lists2DViewBase.ColumnsChanged">
+            <summary>
+            Not sure how to best handle the situation when the number of columns changes.
+            Testing to raise this event and refresh the ItemsSource binding in the DataGrid.
+            Just adding a column would not play nice with explicit columns.
+            This way will not be ideal for performance if it changes frequently
+            </summary>
+        </member>
+        <member name="E:Gu.Wpf.DataGrid2D.TransposedItemsSource.ColumnsChanged">
+            <summary>
+            Not sure how to best handle the situation when the number of columns changes.
+            Testing to raise this event and refresh the ItemsSource binding in the DataGrid.
+            Just adding a column would not play nice with explicit columns.
+            This way will not be ideal for performance if it changes frequently
+            </summary>
+        </member>
+    </members>
+</doc>
